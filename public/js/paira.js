@@ -3,7 +3,7 @@
  * Email -> support@themetidy.com
  * Version -> 1.0
  */
-
+ import $ from 'jquery'; 
 /*******************************************************************************************
  * IIFE - Immediately Invoked Function Expression
  * The global jQuery object (window.jQuery, window, document) is passed as a parameter

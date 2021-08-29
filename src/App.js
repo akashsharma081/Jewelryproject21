@@ -14,7 +14,6 @@ import Product from './components/Product';
 import Register from './components/Register';
 import Search from './components/Search';
 import Video from './components/Video';
-
 function App() {
   return (
       <Router>
