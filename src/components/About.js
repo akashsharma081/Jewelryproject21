@@ -1,6 +1,8 @@
-import React from 'react'
-
+import React, { Component } from 'react'
+import $ from 'jquery';
+import {BrowserRouter as Router,Link , NaviLink , Switch , Route} from 'react-router-dom';
 export default function About() {
+    
     return (
 <>
             <div class="paira-container">
@@ -8,9 +10,9 @@ export default function About() {
                         <section class="header-top">
                             <div>
                                 <div class="logo-text">
-                                    <a href="index.html">
+                                    <Link to="/">
                                         <img src="images/logo.png" class="img-responsive"  alt="" />
-                                    </a>
+                                    </Link>
                                 </div>
                                 <div class="menu-wrap">
                                     <a href="#" data-target="#menu-popup" data-toggle="modal" class="popup-menu">
@@ -20,7 +22,7 @@ export default function About() {
                                 </div>
                                 <div class="cart">
                                     <div class="dropdown cart-menu-body paira-cart-menu-body">
-                                        <a href="cart.html" class="padding-bottom-10"><img src="images/cart.png" alt="" class="img-responsive center-block" /> <span class="paira-cart-item-count">2</span></a>
+                                        <Link to="/Cart" class="padding-bottom-10"><img src="images/cart.png" alt="" class="img-responsive center-block" /> <span class="paira-cart-item-count">2</span></Link>
                                     </div>
                                 </div>
                             </div>
@@ -49,7 +51,7 @@ export default function About() {
                                         <p><span>*** <a href="https://www.themetidy.com/">ThemeTidy</a> 24/7 customer support</span></p>
                                     </div>
                                     <div class="col-md-6 padding-clear">
-                                        <img src="images/about.jpg" alt="" class="img-responsive" />
+                                        <img src="images/IMG_5383.JPG" alt="" class="img-responsive" />
                                     </div>
                                 </div>
                             </div>
@@ -65,32 +67,32 @@ export default function About() {
                                     <h3>Menu</h3>
                                     <ul class="list-unstyled nav-fix margin-top-30 margin-bottom-0">
                                         <li class="">
-                                            <a href="index.html">Home</a>
+                                         <Link to="/" >Home</Link>
                                         </li>
                                         <li class="">
-                                            <a href="collection.html">shop</a>
-                                        </li>
+                                        <Link to="/Collection">Shop</Link>
+                                     </li>
                                         <li class="active">
-                                            <a href="about-us.html">about us</a>
+                                         <Link to="/About">About</Link>
+                                           </li>
+                                        <li class="">
+                                          <Link to="/Blog">blog</Link>
                                         </li>
                                         <li class="">
-                                            <a href="blog.html">blog</a>
+                                         <Link to="/Contact">Contact us</Link>
                                         </li>
                                         <li class="">
-                                            <a href="contact-us.html">contact us</a>
-                                        </li>
-                                        <li class="">
-                                            <a href="video.html">video</a>
+                                          <Link to="/Video"></Link>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12">
                                     <ul class="list-unstyled margin-top-30 nav-fix margin-bottom-0">
                                         <li>
-                                            <a href="login.html">Login</a>
+                                          <Link to="/Login" >Login</Link>
                                         </li>
-                                        <li><a href="register.html">Register</a></li>
-                                        <li><a href="search.html">Search</a></li>
+                                        <li><Link to="/Register">Register</Link></li>
+                                        <li><Link to="/Search">Search</Link></li>
                                     </ul>
                                     <ul class="list-inline margin-top-30 margin-bottom-0">
                                         <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Facebook">

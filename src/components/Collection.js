@@ -1,31 +1,31 @@
 import React from 'react'
-
+import {BrowserRouter as Router,Link , NaviLink , Switch , Route} from 'react-router-dom';
 export default function Collection() {
     return (
 <>
 <div class="paira-container">
-    <header class="header-fixed">
-        <section class="header-top">
-            <div>
-                <div class="logo-text">
-                    <a href="index.html">
-                        <img src="images/logo.png" class="img-responsive"  alt="" />
-                    </a>
-                </div>
-                <div class="menu-wrap">
-                    <a href="#" data-target="#menu-popup" data-toggle="modal" class="popup-menu">
-                        <img src="images/open.png" alt="" class="open-icon" />
-                        <img src="images/close.png" alt="" class="close-icon" />
-                    </a>
-                </div>
-                <div class="cart">
-                    <div class="dropdown cart-menu-body paira-cart-menu-body">
-                        <a href="cart.html" class="padding-bottom-10"><img src="images/cart.png" alt="" class="img-responsive center-block" /> <span class="paira-cart-item-count">2</span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
+        <header class="header-fixed">
+                                <section class="header-top">
+                                    <div>
+                                        <div class="logo-text">
+                                            <Link to="/">
+                                                <img src="images/logo.png" class="img-responsive"  alt="" />
+                                            </Link>
+                                        </div>
+                                        <div class="menu-wrap">
+                                            <a href="#" data-target="#menu-popup" data-toggle="modal" class="popup-menu">
+                                                <img src="images/open.png" alt="" class="open-icon" />
+                                                <img src="images/close.png" alt="" class="close-icon" />
+                                            </a>
+                                        </div>
+                                        <div class="cart">
+                                            <div class="dropdown cart-menu-body paira-cart-menu-body">
+                                                <Link to="/Cart" class="padding-bottom-10"><img src="images/cart.png" alt="" class="img-responsive center-block" /> <span class="paira-cart-item-count">2</span></Link>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+            </header>
     <main class="collection-page">
         <section class="collection-content paira-gap-2">
             <div class="container-fluid">
@@ -69,8 +69,8 @@ export default function Collection() {
                                 <div class="col-md-6 col-sm-6 col-xs-12 padding-clear border-bottom border-none">
                                     <div class="paira-product product border-left">
                                         <a href="product.html">
-                                            <img src="images/product/product-1.jpg" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
-                                            <img src="images/product/product-2.jpg" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
+                                            <img src="images/IMG_5370.JPG" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
+                                            <img src="images/IMG_5310.JPG" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
                                         </a>
                                         <div class="product-sale"><span>Sale</span></div>
                                         <div class="margin-left-10 margin-right-10 product-title-price text-left">
@@ -83,9 +83,9 @@ export default function Collection() {
                                 <div class="col-md-6 col-sm-6 col-xs-12 padding-clear border-bottom ">
                                     <div class="paira-product product border-left">
                                         <a href="product.html">
-                                            <img src="images/product/product-2.jpg" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
+                                            <img src="images/IMG_5442.JPG" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
 
-                                            <img src="images/product/product-3.jpg" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
+                                            <img src="images/IMG_5394.JPG" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
                                         </a>
                                         <div class="margin-left-10 margin-right-10 product-title-price text-left">
                                             <h2 class="margin-top-10 text-capitalize font-weight-400"><a href="product.html" class="paira-product-title">Free demo product name 10</a></h2>
@@ -96,9 +96,9 @@ export default function Collection() {
                                 <div class="col-md-6 col-sm-6 col-xs-12 padding-clear border-bottom border-none">
                                     <div class="paira-product product border-left">
                                         <a href="product.html">
-                                            <img src="images/product/product-3.jpg" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
+                                            <img src="images/IMG_5324.JPG" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
 
-                                            <img src="images/product/product-4.jpg" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
+                                            <img src="images/IMG_5366.JPG" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
                                         </a>
                                         <div class="margin-left-10 margin-right-10 product-title-price text-left">
                                             <h2 class="margin-top-10 text-capitalize font-weight-400"><a href="product.html" class="paira-product-title">Free demo product name 2</a></h2>
@@ -109,9 +109,9 @@ export default function Collection() {
                                 <div class="col-md-6 col-sm-6 col-xs-12 padding-clear border-bottom ">
                                     <div class="paira-product product border-left">
                                         <a href="product.html">
-                                            <img src="images/product/product-4.jpg" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
+                                            <img src="images/IMG_5435.JPG" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
 
-                                            <img src="images/product/product-5.jpg" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
+                                            <img src="images/IMG_5399.JPG" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
                                         </a>
                                         <div class="margin-left-10 margin-right-10 product-title-price text-left">
                                             <h2 class="margin-top-10 text-capitalize font-weight-400"><a href="product.html" class="paira-product-title">Free demo product name 3</a></h2>
@@ -122,8 +122,8 @@ export default function Collection() {
                                 <div class="col-md-6 col-sm-6 col-xs-12 padding-clear border-bottom border-none">
                                     <div class="paira-product product border-left">
                                         <a href="product.html">
-                                            <img src="images/product/product-5.jpg" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
-                                            <img src="images/product/product-10.jpg" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
+                                            <img src="images/IMG_5436.JPG" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
+                                            <img src="images/IMG_5396.JPG" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
                                         </a>
                                         <div class="margin-left-10 margin-right-10 product-title-price text-left">
                                             <h2 class="margin-top-10 text-capitalize font-weight-400"><a href="product.html" class="paira-product-title">Free demo product name 4</a></h2>
@@ -134,8 +134,8 @@ export default function Collection() {
                                 <div class="col-md-6 col-sm-6 col-xs-12 padding-clear border-bottom ">
                                     <div class="paira-product product border-left">
                                         <a href="product.html">
-                                            <img src="images/product/product-10.jpg" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
-                                            <img src="images/product/product-7.jpg" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
+                                            <img src="images/IMG_5370.JPG" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
+                                            <img src="images/IMG_5429.JPG" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
                                         </a>
                                         <div class="product-sale"><span>Sale</span></div>
                                         <div class="margin-left-10 margin-right-10 product-title-price text-left">
@@ -148,8 +148,8 @@ export default function Collection() {
                                 <div class="col-md-6 col-sm-6 col-xs-12 padding-clear border-bottom border-none">
                                     <div class="paira-product product border-left">
                                         <a href="product.html">
-                                            <img src="images/product/product-7.jpg" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
-                                            <img src="images/product/product-8.jpg" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
+                                            <img src="images/IMG_5435.JPG" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
+                                            <img src="images/IMG_5399.JPG" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
                                         </a>
                                         <div class="margin-left-10 margin-right-10 product-title-price text-left">
                                             <h2 class="margin-top-10 text-capitalize font-weight-400"><a href="product.html" class="paira-product-title">Free demo product name 6</a></h2>
@@ -160,9 +160,9 @@ export default function Collection() {
                                 <div class="col-md-6 col-sm-6 col-xs-12 padding-clear border-bottom ">
                                     <div class="paira-product product border-left">
                                         <a href="product.html">
-                                            <img src="images/product/product-8.jpg" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
+                                            <img src="images/IMG_5311.JPG" alt="" class="img-responsive center-block paira-product-image full-width inactive-product" />
 
-                                            <img src="images/product/product-9.jpg" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
+                                            <img src="images/IMG_5437.JPG" alt="" class="img-responsive center-block paira-product-image full-width product-active" />
                                         </a>
                                         <div class="margin-left-10 margin-right-10 product-title-price text-left">
                                             <h2 class="margin-top-10 text-capitalize font-weight-400"><a href="product.html" class="paira-product-title">Free demo product name 7</a></h2>
@@ -189,109 +189,109 @@ export default function Collection() {
     </main>
 </div>
 <div class="modal left menu fade menu-popup" data-backdrop="static" id="menu-popup" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <h3>Menu</h3>
-                        <ul class="list-unstyled nav-fix margin-top-30 margin-bottom-0">
-                            <li class="">
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li class="active">
-                                <a href="collection.html">shop</a>
-                            </li>
-                            <li class="">
-                                <a href="about-us.html">about us</a>
-                            </li>
-                            <li class="">
-                                <a href="blog.html">blog</a>
-                            </li>
-                            <li class="">
-                                <a href="contact-us.html">contact us</a>
-                            </li>
-                            <li class="">
-                                <a href="video.html">video</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-12 col-sm-12 col-xs-12">
-                        <ul class="list-unstyled margin-top-30 nav-fix margin-bottom-0">
-                            <li>
-                                <a href="login.html">Login</a>
-                            </li>
-                            <li><a href="register.html">Register</a></li>
-                            <li><a href="search.html">Search</a></li>
-                        </ul>
-                        <ul class="list-inline margin-top-30 margin-bottom-0">
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Facebook">
-                                <a href="https://www.facebook.com/themetidy" target="_blank">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Twitter">
-                                <a href="https://twitter.com/themetidy" target="_blank">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Google Plus">
-                                <a href="https://plus.google.com/+Themetidy-Official-Page" target="_blank">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Rss">
-                                <a href="#" target="_blank">
-                                    <i class="fa fa-rss"></i>
-                                </a>
-                            </li>
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Pinterest">
-                                <a href="https://pinterest.com/themetidy" target="_blank">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                            </li>
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Instagram">
-                                <a href="https://instagram.com/themetidy" target="_blank">
-                                    <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="LinkedIn">
-                                <a href="https://www.linkedin.com/company/themetidy" target="_blank">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Vimeo">
-                                <a href="#" target="_blank">
-                                    <i class="fa fa-vimeo-square"></i>
-                                </a>
-                            </li>
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Youtube">
-                                <a href="https://www.youtube.com/user/themetidy" target="_blank">
-                                    <i class="fa fa-youtube-play"></i>
-                                </a>
-                            </li>
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Flickr">
-                                <a href="https://www.flickr.com/photos/themetidy" target="_blank">
-                                    <i class="fa fa-flickr"></i>
-                                </a>
-                            </li>
-                            <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Contact Us">
-                                <a href="mailto:support@themetidy.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
-                            </li>
-                        </ul>
-                        <ul class="list-inline margin-top-40 margin-bottom-0">
-                            <li><i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-cc-paypal fa-2x" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-cc-stripe fa-2x" aria-hidden="true"></i></li>
-                            <li><i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i></li>
-                        </ul>
-                        <p class="pull-left margin-top-40 margin-clear">&copy; <a href="#" target="_blank">ThemeTidy</a>. All Rights Reserved.</p>
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <h3>Menu</h3>
+                                    <ul class="list-unstyled nav-fix margin-top-30 margin-bottom-0">
+                                        <li class="">
+                                         <Link to="/" >Home</Link>
+                                        </li>
+                                        <li class="">
+                                        <Link to="/Collection">Shop</Link>
+                                     </li>
+                                        <li class="active">
+                                         <Link to="/About">About</Link>
+                                           </li>
+                                        <li class="">
+                                          <Link to="/Blog">blog</Link>
+                                        </li>
+                                        <li class="">
+                                         <Link to="/Contact">Contact us</Link>
+                                        </li>
+                                        <li class="">
+                                          <Link to="/Video"></Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <ul class="list-unstyled margin-top-30 nav-fix margin-bottom-0">
+                                        <li>
+                                          <Link to="/Login" >Login</Link>
+                                        </li>
+                                        <li><Link to="/Register">Register</Link></li>
+                                        <li><Link to="/Search">Search</Link></li>
+                                    </ul>
+                                    <ul class="list-inline margin-top-30 margin-bottom-0">
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Facebook">
+                                            <a href="https://www.facebook.com/themetidy" target="_blank">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Twitter">
+                                            <a href="https://twitter.com/themetidy" target="_blank">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Google Plus">
+                                            <a href="https://plus.google.com/+Themetidy-Official-Page" target="_blank">
+                                                <i class="fa fa-google-plus"></i>
+                                            </a>
+                                        </li>
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Rss">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-rss"></i>
+                                            </a>
+                                        </li>
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Pinterest">
+                                            <a href="https://pinterest.com/themetidy" target="_blank">
+                                                <i class="fa fa-pinterest"></i>
+                                            </a>
+                                        </li>
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Instagram">
+                                            <a href="https://instagram.com/themetidy" target="_blank">
+                                                <i class="fa fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="LinkedIn">
+                                            <a href="https://www.linkedin.com/company/themetidy" target="_blank">
+                                                <i class="fa fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Vimeo">
+                                            <a href="#" target="_blank">
+                                                <i class="fa fa-vimeo-square"></i>
+                                            </a>
+                                        </li>
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Youtube">
+                                            <a href="https://www.youtube.com/user/themetidy" target="_blank">
+                                                <i class="fa fa-youtube-play"></i>
+                                            </a>
+                                        </li>
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Flickr">
+                                            <a href="https://www.flickr.com/photos/themetidy" target="_blank">
+                                                <i class="fa fa-flickr"></i>
+                                            </a>
+                                        </li>
+                                        <li class="margin-top-10" data-toggle="tooltip" data-placement="top" title="Contact Us">
+                                            <a href="mailto:support@themetidy.com" target="_blank"><i class="fa fa-envelope-o"></i></a>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-inline margin-top-40 margin-bottom-0">
+                                        <li><i class="fa fa-cc-mastercard fa-2x" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-cc-paypal fa-2x" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-cc-stripe fa-2x" aria-hidden="true"></i></li>
+                                        <li><i class="fa fa-cc-visa fa-2x" aria-hidden="true"></i></li>
+                                    </ul>
+                                    <p class="pull-left margin-top-40 margin-clear">&copy; <a href="#" target="_blank">ThemeTidy</a>. All Rights Reserved.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>      
+            </div>  
 </>
     )
 }

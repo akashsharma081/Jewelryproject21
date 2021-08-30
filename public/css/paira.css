@@ -1553,3 +1553,7 @@ img {
 .modal{
     background: rgba(235,235,235,.5);
 }
+
+.fixed1{
+    background: url(images/IMG_5394.JPG) no-repeat fixed;
+}
