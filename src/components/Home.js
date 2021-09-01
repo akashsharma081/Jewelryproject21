@@ -2,10 +2,15 @@ import React, { Component } from 'react'
 import $ from 'jquery';
 import {BrowserRouter as Router,Link , NaviLink , Switch , Route} from 'react-router-dom';
 export default function Home() {
- 
+ var stylepaira={
+        background:"url(images/IMG_5394.JPG) no-repeat fixed" 
+ }
+//  var style1={
+//      width=100%;
+//  }
       return (
  <>
-    <div class="paira-container">
+    <div class="paira-container" style={{width: '100%' }}>
                 <header class="header-fixed">
                                         <section class="header-top">
                                             <div>
@@ -108,8 +113,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            {/* style="background: url(images/IMG_5394.JPG) no-repeat fixed;" */}
-            <section class="parallax parallax-height border-bottom fixed1"  >
+            {/* style="background: url(images/IMG_5394.JPG) no-repeat fixed;"style={{background: "url(images/IMG_5394.JPG) no-repeat fixed"}} */}
+            <section class="parallax parallax-height border-bottom fixed1"  style={stylepaira} >
                 <div class="position-r paral">
                     <div class="overly"></div>
                     <div class="parallax-text">
